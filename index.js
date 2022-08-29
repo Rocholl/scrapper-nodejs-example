@@ -47,11 +47,10 @@ async function scrapPage(url) {
         console.log($(this).attr("data-all"));
         
       });
-
     });
   }
 }
-function scrapFuckingAll() {
+function scrapAll() {
   toScrap.forEach((cat) => {
     cat.type.forEach((type) => {
         if(type.link){
@@ -60,4 +59,4 @@ function scrapFuckingAll() {
     });
   });
 }
-scrapFuckingAll();
+scrapAll();
